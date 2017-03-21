@@ -91,13 +91,6 @@ gibbs=function(N,V,W, iter=10){ ## N: number of
         pp=rr/(1+rr)
       }
       L.j.next=rbinom(1,1, pp)
-      if(is.na(L.j.next)){
-        print(rr)
-        print(w.counts.1)
-        print(w.counts.0)
-        print(theta.1)
-        print(theta.0)
-      }
       L[j] = L.j.next
       
       #update counts
